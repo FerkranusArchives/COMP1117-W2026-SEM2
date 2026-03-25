@@ -29589,14 +29589,14 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.0025839794
+    y: 0
     width: 1
-    height: 0.99224806
+    height: 1
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 6
+  orthographic size: 6.0625
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -51800,6 +51800,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 2985127476895728771, guid: 7f42f5c054cc0fa4dadfa2c6b8601e51, type: 3}
+      propertyPath: jumpAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 5fcef1092d64ed947a82f85a2a943c66, type: 3}
     - target: {fileID: 2985127476895728771, guid: 7f42f5c054cc0fa4dadfa2c6b8601e51, type: 3}
       propertyPath: moveSpeed
       value: 10

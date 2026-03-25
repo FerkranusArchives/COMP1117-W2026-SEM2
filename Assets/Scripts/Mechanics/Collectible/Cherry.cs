@@ -8,6 +8,8 @@ public class Cherry : MonoBehaviour
     // The event that carries the value
     public UnityEvent<int> onPickedUp;
 
+    
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
