@@ -6,6 +6,9 @@ public class AudioManager : MonoBehaviour
     // 1. Static access point
     public static AudioManager Instance;
 
+    [Header("PlayList")]
+    [SerializeField] private AudioPlaylist playlist;
+
     [Header("Music")]
     [Tooltip("Playing looping background tracks")]
     [SerializeField] private AudioSource musicSource;
@@ -33,15 +36,33 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    public void PlayMusic(AudioClip musicClip, bool isLooping = true)
+    private void Start()
     {
-        musicSource.clip = musicClip;
-        musicSource.loop = isLooping;
-        musicSource.Play();
+        // Safety check!
+        if (playlist != null && playlist.menuTheme != null)
+        {
+            PlayMenuMusic();
+        }
     }
 
-    public void PlaySFX(AudioClip clip)
+    /*
+    public void PlayMenuMusic()
     {
-        sfxSource.PlayOneShot(clip);
+        PlayMusic(playlist.menuTheme);
+    }
+    */
+    public void PlayMenuMusic() => PlayMusic(playlist.menuTheme);
+    public void PlayLevelMusic() => PlayMusic(playlist.levelTheme);
+    public void PlayJumpSFX() => sfxSource.PlayOneShot(playlist.jump);
+
+    private void PlayMusic(AudioClip clip)
+    {
+        if(musicSource.clip == clip)
+        {
+            return; // If I am playing the same clip, just return. Prevents restarting if already playing
+        }
+
+        musicSource.clip = clip;
+        musicSource.Play();
     }
 }

@@ -3,11 +3,9 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuManager : MonoBehaviour
 {
-    public AudioClip levelMusic;
-
     public void StartGame()
     {
-        AudioManager.Instance.PlayMusic(levelMusic);
+        AudioManager.Instance.PlayLevelMusic();
         SceneManager.LoadScene("Level");
     }
 
