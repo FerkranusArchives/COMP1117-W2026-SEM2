@@ -17,6 +17,8 @@ public class Checkpoint : MonoBehaviour
 
     private SpriteRenderer sRend;
 
+    private bool IsActivated = false;
+
     private void Awake()
     {
         sRend = GetComponent<SpriteRenderer>();
@@ -32,7 +34,7 @@ public class Checkpoint : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             sRend.color = Color.green;
-
+            
             /* The C# Way
             // 3. Let everyone know checkpoint has been reached!
             OnCheckpointReached?.Invoke(collision.transform.position);
@@ -41,7 +43,11 @@ public class Checkpoint : MonoBehaviour
             // The UnityEvent Way
             onCheckpointReached.Invoke(collision.transform.position);
 
-            OnCheckpointReached?.Invoke(); // C#, for audio
+            if (!IsActivated)
+            {
+                OnCheckpointReached?.Invoke(); // C#, for audio
+            }
+            IsActivated = true;
 
             Debug.Log("Checkpoint Reached!");
         }
