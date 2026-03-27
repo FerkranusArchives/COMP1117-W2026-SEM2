@@ -15,3 +15,7 @@ MonoBehaviour:
   menuTheme: {fileID: 8300000, guid: c4e89a62a84bd0d4c917b326373443e2, type: 3}
   levelTheme: {fileID: 8300000, guid: 8c91f9365558e3242864116ed7c99fc3, type: 3}
   jump: {fileID: 8300000, guid: 5fcef1092d64ed947a82f85a2a943c66, type: 3}
+  doubleJump: {fileID: 8300000, guid: 45c222e593037494bb9e59060df13089, type: 3}
+  walk: {fileID: 8300000, guid: 7d61b1491bb8e6c44b7c496a5a023d69, type: 3}
+  enemyStomp: {fileID: 8300000, guid: cabfae866cab347928b74b7d0ca6bfa9, type: 3}
+  itemPickup: {fileID: 8300000, guid: 94c1375d6c4ae6e468d135705094c5b4, type: 3}

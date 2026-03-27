@@ -40,7 +40,7 @@ public abstract class Enemy : Character
         {
             playerRb.linearVelocity = new Vector2(playerRb.linearVelocity.x, stompBounceForce);
         }
-
+        AudioManager.Instance.PlayEnemyStompSFX();
         Die();
     }
 

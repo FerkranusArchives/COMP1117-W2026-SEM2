@@ -54,6 +54,18 @@ public class AudioManager : MonoBehaviour
     public void PlayMenuMusic() => PlayMusic(playlist.menuTheme);
     public void PlayLevelMusic() => PlayMusic(playlist.levelTheme);
     public void PlayJumpSFX() => sfxSource.PlayOneShot(playlist.jump);
+    public void PlayDoubleJumpSFX() => sfxSource.PlayOneShot(playlist.doubleJump);
+    public void PlayWalkSFX()
+    {
+        //if (!sfxSource.isPlaying)
+       // {
+            sfxSource.PlayOneShot(playlist.walk);
+       // }
+    }
+    public void PlayEnemyStompSFX() => sfxSource.PlayOneShot(playlist.enemyStomp);
+    public void PlayItemPickupSFX() => sfxSource.PlayOneShot(playlist.itemPickup);
+
+    
 
     private void PlayMusic(AudioClip clip)
     {

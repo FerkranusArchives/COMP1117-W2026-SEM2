@@ -56,6 +56,7 @@ public class Player : Character
     {
         // Reads the Vector2 value (WASD/Joystick)
         moveInput = context.ReadValue<Vector2>();
+        AudioManager.Instance.PlayWalkSFX();
     }
 
     public void OnJump(InputAction.CallbackContext context)
@@ -75,12 +76,20 @@ public class Player : Character
     {
         rBody.linearVelocity = new Vector2(moveInput.x * MoveSpeed, rBody.linearVelocity.y);
         FlipSprite(moveInput.x);
+        
     }
 
     private void Jump()
     {
-        AudioManager.Instance.PlayJumpSFX();
-        rBody.linearVelocity = new Vector2(rBody.linearVelocity.x, jumpForce);
+        if (jumpsRemaining == 2)
+        {
+            AudioManager.Instance.PlayJumpSFX();
+        }
+        else
+        {
+            AudioManager.Instance.PlayDoubleJumpSFX();
+        }
+            rBody.linearVelocity = new Vector2(rBody.linearVelocity.x, jumpForce);
         anim.SetTrigger("Jump");
 
         jumpsRemaining--;
