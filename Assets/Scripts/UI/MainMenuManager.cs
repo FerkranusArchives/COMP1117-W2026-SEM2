@@ -3,10 +3,19 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuManager : MonoBehaviour
 {
+    [SerializeField] public GameObject pauseMenu;
+    [SerializeField] public GameObject MainMenu;
+
     public void StartGame()
     {
         AudioManager.Instance.PlayLevelMusic();
         SceneManager.LoadScene("Level");
+    }
+
+    public void Options()
+    {
+        pauseMenu.SetActive(true);
+       MainMenu.SetActive(false);
     }
 
     public void QuitGame()
