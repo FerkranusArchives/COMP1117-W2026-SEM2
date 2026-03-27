@@ -17,7 +17,7 @@ public class AudioManager : MonoBehaviour
     [Tooltip("Plays one-shot sound effects")]
     [SerializeField] private AudioSource sfxSource;
 
-    [SerializeField] public Checkpoint checkpointRef;
+    
 
     private void Awake()
     {
@@ -56,7 +56,7 @@ public class AudioManager : MonoBehaviour
     public void PlayMenuMusic() => PlayMusic(playlist.menuTheme);
     public void PlayLevelMusic() => PlayMusic(playlist.levelTheme);
     public void PlayJumpSFX() => sfxSource.PlayOneShot(playlist.jump);
-    public void PlayCheckpointSFX() => sfxSource.PlayOneShot(playlist.checkpoint, 1f);
+    
 
     private void PlayMusic(AudioClip clip)
     {
@@ -69,16 +69,5 @@ public class AudioManager : MonoBehaviour
         musicSource.Play();
     }
 
-    private void OnEnable()
-    {
-        checkpointRef.OnCheckpointReached += PlayCheckpointSFX;
-    }
-
-    private void OnDisable()
-    {
-        if (checkpointRef  != null)
-        {
-            checkpointRef.OnCheckpointReached -= PlayCheckpointSFX;
-        }
-    }
+    
 }
