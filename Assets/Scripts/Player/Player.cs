@@ -56,7 +56,7 @@ public class Player : Character
     {
         // Reads the Vector2 value (WASD/Joystick)
         moveInput = context.ReadValue<Vector2>();
-        AudioManager.Instance.PlayWalkSFX();
+     //   AudioManager.Instance.PlayWalkSFX();
     }
 
     public void OnJump(InputAction.CallbackContext context)
