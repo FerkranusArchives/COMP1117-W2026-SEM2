@@ -22,6 +22,11 @@ public class Checkpoint : MonoBehaviour
         sRend = GetComponent<SpriteRenderer>();
     }
 
+    public delegate void CheckpointHandler();
+    public event CheckpointHandler OnCheckpointReached;
+
+    
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
@@ -36,7 +41,11 @@ public class Checkpoint : MonoBehaviour
             // The UnityEvent Way
             onCheckpointReached.Invoke(collision.transform.position);
 
+            OnCheckpointReached?.Invoke(); // C#, for audio
+
             Debug.Log("Checkpoint Reached!");
         }
     }
+
+
 }

@@ -1,2 +1,15 @@
 fileFormatVersion: 2
 guid: dac8ea2daf2a81b46b7036ffbcc27693
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - playlist: {fileID: 11400000, guid: d755bb3f4d597ac49909e785f7aca567, type: 2}
+  - musicSource: {instanceID: 0}
+  - sfxSource: {instanceID: 0}
+  - checkpointRef: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

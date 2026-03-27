@@ -416,6 +416,7 @@ MonoBehaviour:
   playlist: {fileID: 11400000, guid: d755bb3f4d597ac49909e785f7aca567, type: 2}
   musicSource: {fileID: 1121233364}
   sfxSource: {fileID: 93049577}
+  checkpointRef: {fileID: 6575104952752675889, guid: a6e50504fc21e9046a095d9042af6dc6, type: 3}
 --- !u!4 &1015421423
 Transform:
   m_ObjectHideFlags: 0

@@ -9,4 +9,5 @@ public class AudioPlaylist : ScriptableObject
 
     [Header("Sound Effects")]
     public AudioClip jump;
+    public AudioClip checkpoint;
 }
