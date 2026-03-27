@@ -13,34 +13,33 @@ public class PauseMenuControl : MonoBehaviour
     [SerializeField] public AudioMixer mixer;
 
     [Header("Values")]
-    [SerializeField] public float MasterVal;
-    [SerializeField] public float SFXVal;
-    [SerializeField] public float MusicVal;
+    public float MasterVal;
+    public float SFXVal;
+    public float MusicVal;
+   // [SerializeField] public float MasterVal;
+    //[SerializeField] public float SFXVal;
+   // [SerializeField] public float MusicVal;
 
     [Header("Menus")]
     [SerializeField] public GameObject MainMenu;
     [SerializeField] public GameObject PauseMenu;
 
-    private void Awake()
-    {
-        DontDestroyOnLoad(gameObject);
-    }
+
+
+    
     public void OnMasterChange()
     {
-       MasterSlider.value = MasterVal;
-        mixer.SetFloat("MasterVolume", MasterVal);
+        mixer.SetFloat("MasterVolume", MasterSlider.value);
     }
 
     public void OnSFXChange()
     {
-        SFXSlider.value = SFXVal;
-        mixer.SetFloat("SFXVolume", SFXVal);
+        mixer.SetFloat("SFXVolume", SFXSlider.value);
     }
 
     public void OnMusicChange()
     {
-        MusicSlider.value = MusicVal;
-        mixer.SetFloat("MusicVolume", MusicVal);
+        mixer.SetFloat("MusicVolume", MusicSlider.value);
     }
 
     public void OnBack()

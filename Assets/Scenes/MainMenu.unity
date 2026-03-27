@@ -2000,6 +2000,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1893318141628575832, guid: 869a44f46e0337c46a3eb3453aa57ec5, type: 3}
+      propertyPath: m_Value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1893318141628575832, guid: 869a44f46e0337c46a3eb3453aa57ec5, type: 3}
+      propertyPath: m_MaxValue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1893318141628575832, guid: 869a44f46e0337c46a3eb3453aa57ec5, type: 3}
+      propertyPath: m_MinValue
+      value: -30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1893318141628575832, guid: 869a44f46e0337c46a3eb3453aa57ec5, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1346560273}
+    - target: {fileID: 1893318141628575832, guid: 869a44f46e0337c46a3eb3453aa57ec5, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnMusicChange
+      objectReference: {fileID: 0}
+    - target: {fileID: 1893318141628575832, guid: 869a44f46e0337c46a3eb3453aa57ec5, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PauseMenuControl, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1893318141628575832, guid: 869a44f46e0337c46a3eb3453aa57ec5, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2014476820765275849, guid: 869a44f46e0337c46a3eb3453aa57ec5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2008,10 +2036,50 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2980791144204886722, guid: 869a44f46e0337c46a3eb3453aa57ec5, type: 3}
+      propertyPath: m_Value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2980791144204886722, guid: 869a44f46e0337c46a3eb3453aa57ec5, type: 3}
+      propertyPath: m_MaxValue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2980791144204886722, guid: 869a44f46e0337c46a3eb3453aa57ec5, type: 3}
+      propertyPath: m_MinValue
+      value: -30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2980791144204886722, guid: 869a44f46e0337c46a3eb3453aa57ec5, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1346560273}
+    - target: {fileID: 2980791144204886722, guid: 869a44f46e0337c46a3eb3453aa57ec5, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnMasterChange
+      objectReference: {fileID: 0}
+    - target: {fileID: 2980791144204886722, guid: 869a44f46e0337c46a3eb3453aa57ec5, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PauseMenuControl, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2980791144204886722, guid: 869a44f46e0337c46a3eb3453aa57ec5, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257618895081082787, guid: 869a44f46e0337c46a3eb3453aa57ec5, type: 3}
+      propertyPath: SFXVal
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3257618895081082787, guid: 869a44f46e0337c46a3eb3453aa57ec5, type: 3}
       propertyPath: MainMenu
       value: 
       objectReference: {fileID: 1460203793}
+    - target: {fileID: 3257618895081082787, guid: 869a44f46e0337c46a3eb3453aa57ec5, type: 3}
+      propertyPath: MusicVal
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257618895081082787, guid: 869a44f46e0337c46a3eb3453aa57ec5, type: 3}
+      propertyPath: MasterVal
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3257618895081082787, guid: 869a44f46e0337c46a3eb3453aa57ec5, type: 3}
       propertyPath: PauseMenu
       value: 
@@ -2031,6 +2099,34 @@ PrefabInstance:
     - target: {fileID: 4251166454191015240, guid: 869a44f46e0337c46a3eb3453aa57ec5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnBack
+      objectReference: {fileID: 0}
+    - target: {fileID: 4504203904712029857, guid: 869a44f46e0337c46a3eb3453aa57ec5, type: 3}
+      propertyPath: m_Value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4504203904712029857, guid: 869a44f46e0337c46a3eb3453aa57ec5, type: 3}
+      propertyPath: m_MaxValue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4504203904712029857, guid: 869a44f46e0337c46a3eb3453aa57ec5, type: 3}
+      propertyPath: m_MinValue
+      value: -30
+      objectReference: {fileID: 0}
+    - target: {fileID: 4504203904712029857, guid: 869a44f46e0337c46a3eb3453aa57ec5, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1346560273}
+    - target: {fileID: 4504203904712029857, guid: 869a44f46e0337c46a3eb3453aa57ec5, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnSFXChange
+      objectReference: {fileID: 0}
+    - target: {fileID: 4504203904712029857, guid: 869a44f46e0337c46a3eb3453aa57ec5, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PauseMenuControl, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4504203904712029857, guid: 869a44f46e0337c46a3eb3453aa57ec5, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5031504218675420450, guid: 869a44f46e0337c46a3eb3453aa57ec5, type: 3}
       propertyPath: m_AnchorMax.x
